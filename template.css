@@ -3,6 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+.nav-bar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  position: fixed;
+}
+.nav-bar__child {
+  margin-top: 15px;
+  width: 70px;
+}
+#br-architects {
+  flex-grow: 1;
+}
 .top {
   height: 500px;
   background-image: url(https://www.relaisdulouvre.com/wp-content/uploads/2024/03/Louvre1-1024x682.jpg);

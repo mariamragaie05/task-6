@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top {
+  height: 500px;
+  background-image: url(https://www.relaisdulouvre.com/wp-content/uploads/2024/03/Louvre1-1024x682.jpg);
+  background-size: contain;
+}
+h1 {
+  color: white;
+  /* text-align: center; */
+  position: relative;
+  top: 240px;
+  left: 40%;
+}
+.br {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.697);
+}

@@ -15,10 +15,10 @@
         <a onclick="location.href='#projects-section'">Projects</a>
       </button>
       <button class="nav-bar__child">
-        <a onclick="location.href='#projects-section'">About</a>
+        <a onclick="location.href='#about-section'">About</a>
       </button>
       <button class="nav-bar__child">
-        <a onclick="location.href='#projects-section'">Contact</a>
+        <a onclick="location.href='#contact-section'">Contact</a>
       </button>
     </div>
     <div id="top">
@@ -104,8 +104,10 @@
       </div>
     </section>
     <br />
+    <br />
+    <br />
     <section id="about-section">
-      <h2>About</h2>
+      <h2 class="about__title">About</h2>
       <br />
       <hr />
       <p class="about__description">
@@ -178,5 +180,63 @@
         </div>
       </div>
     </section>
+    <br />
+    <br />
+    <br />
+    <section id="contact-section">
+      <h2 class="contact__title">Contact</h2>
+      <br />
+      <hr />
+      <p class="contact__description">
+        Lets get in touch and talk about your next project!
+      </p>
+      <form class="contact__form">
+        <input
+          class="contact__form-input"
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="contact__form-input"
+          name="email"
+          type="email"
+          placeholder="Email"
+          required
+          autocomplete=""
+        />
+        <input
+          class="contact__form-input"
+          name="subject"
+          type="text"
+          placeholder="Subject"
+          required
+        />
+        <input
+          class="contact__form-input"
+          name="comment"
+          type="text"
+          placeholder="Comment"
+          required
+        />
+        <button class="contact__form-submit" type="submit">SEND MESSAGE</button>
+      </form>
+    </section>
+    <br />
+    <img
+      class="bottom-photo"
+      src="https://www.w3schools.com/w3images/map.jpg"
+      alt="photo"
+    />
+    <p class="bottom-text">
+      Powered by
+      <a
+        class="bottom-link"
+        target="_blank"
+        href="https://www.w3schools.com/w3css/default.asp"
+        >w3.css</a
+      >
+    </p>
   </body>
 </html>

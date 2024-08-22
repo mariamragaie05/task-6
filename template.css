@@ -2,6 +2,8 @@
   margin: auto;
   padding: auto;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 hr {
   border: none;
@@ -17,7 +19,7 @@ hr {
   display: flex;
   background-color: white;
   position: fixed;
-  font-size: 20px;
+  z-index: 1;
 }
 .nav-bar__child {
   margin-top: 15px;
@@ -34,9 +36,12 @@ hr {
   text-align: left;
 }
 #top {
-  height: 400px;
   background-image: url(https://www.w3schools.com/w3images/architect.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +60,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.summer-house__label {
+.projects__label {
   position: absolute;
   color: white;
   background-color: black;
@@ -63,46 +68,7 @@ h1 {
   height: fit-content;
   padding: 10px;
 }
-.summer-house__photo {
-  width: 300px;
-  height: 300px;
-  height: fit-content;
-}
-.brick-house__label {
-  position: absolute;
-  color: white;
-  background-color: black;
-  width: fit-content;
-  height: fit-content;
-  padding: 10px;
-}
-.brick-house__photo {
-  width: 300px;
-  height: 300px;
-  height: fit-content;
-}
-.Renovated__label {
-  position: absolute;
-  color: white;
-  background-color: black;
-  width: fit-content;
-  height: fit-content;
-  padding: 10px;
-}
-.Renovated__photo {
-  width: 300px;
-  height: 300px;
-  height: fit-content;
-}
-.barn-house__label {
-  position: absolute;
-  color: white;
-  background-color: black;
-  width: fit-content;
-  height: fit-content;
-  padding: 10px;
-}
-.barn-house__photo {
+.projects__photo {
   width: 300px;
   height: 300px;
   height: fit-content;
@@ -177,8 +143,13 @@ h1 {
   background-color: lightgray;
 }
 .bottom-photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
   width: 100%;
-  height: 400px;
+  /* width: 100%;
+  height: 400px; */
   margin: 10px;
 }
 .bottom-text {
@@ -200,4 +171,12 @@ h1 {
 }
 .bottom-link:hover {
   color: green;
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  .nav-bar {
+    height: fit-content;
+  }
+  .nav-bar__child {
+    font-size: 17px;
+  }
 }
